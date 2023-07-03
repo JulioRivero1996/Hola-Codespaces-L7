@@ -29,12 +29,12 @@ public class ApiController {
   	//private JdbcTemplate jdbcTemplate;
 
 	@GetMapping(path="/idat/codigo")
-    public String homecodigo (){
+    public @ResponseBody String homecodigo (){
         return "PT72528736";
     }
 
     @GetMapping(path="/idat/nombre-completo")
-    public String homenombrecompleto (){
+    public @ResponseBody String homenombrecompleto (){
         return "Julio Aldair Rivero Crisostomo";
     }
 
