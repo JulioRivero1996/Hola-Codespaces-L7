@@ -27,17 +27,7 @@ public class ApiController {
 
 	//@Autowired
   	//private JdbcTemplate jdbcTemplate;
-
-	@GetMapping(path="/idat/codigo")
-    public @ResponseBody String codigo (){
-        return "PT72528736";
-    }
-
-    @GetMapping(path="/idat/nombre-completo")
-    public @ResponseBody String nombrecompleto (){
-        return "Julio Aldair Rivero Crisostomo";
-    }
-
+	
 	@GetMapping(path="/api/curso/listar")
 	public @ResponseBody Iterable<Curso> getAllCursos() {
 		return cursoRepository.findAll();
