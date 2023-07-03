@@ -13,4 +13,14 @@ public class Controller{
     public String home (){
         return "PT72528736 - Julio Rivero";
     }
+
+    @GetMapping(path="/idat/codigo")
+    public String homecodigo (){
+        return "PT72528736";
+    }
+
+    @GetMapping(path="/idat/nombre-completo")
+    public String homenombrecompleto (){
+        return "Julio Aldair Rivero Crisostomo";
+    }
 }
