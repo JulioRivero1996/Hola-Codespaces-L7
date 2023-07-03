@@ -19,7 +19,7 @@ import java.lang.String;
 //import org.springframework.jdbc.core.JdbcTemplate;
 
 @Controller	
-@RequestMapping(path="") 
+@RequestMapping(path="/") 
 public class ApiController {
 	@Autowired 
 	private CursoRepository cursoRepository;

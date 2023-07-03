@@ -16,12 +16,12 @@ public class Controller{
     }
 
     @GetMapping(path="/idat/codigo")
-    public String codigo (){
+    public @ResponseBody String codigo (){
         return "PT72528736";
     }
 
     @GetMapping(path="/idat/nombre-completo")
-    public String nombrecompleto (){
+    public @ResponseBody String nombrecompleto (){
         return "Julio Aldair Rivero Crisostomo";
     }
 
